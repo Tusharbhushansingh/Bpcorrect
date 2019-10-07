@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+         
+           <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+	        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+	        
+	        <property name="url" value="jdbc:mysql://10.138.1.48/bpconnect_prod?useSSL=false" />
+	        <property name="username" value="bpconnect_prod" />
+	        <property name="password" value="ATtaJM2dhMiVk$%2HDAyxO95#gu!9*eb" />
+        </bean>  
+         
+
+           <!--  <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+	        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+	        
+	        <property name="url" value="jdbc:mysql://localhost:3306/protech_sentinel_v1?useSSL=false" />
+	        <property name="username" value="root" />
+	        <property name="password" value="rootpasswordgiven1#" />
+        </bean>  -->
+             
+ </beans>
